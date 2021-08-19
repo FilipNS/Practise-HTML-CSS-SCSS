@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  color: #797979;
+}
+
+header {
+  background-color: #fff;
+  padding: 0.5em 1em;
+}
+header:before, header:after {
+  content: "";
+  display: table;
+}
+header:after {
+  clear: both;
+}
+
+.logo {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: sans-serif, "Raleway";
+  float: left;
+}
+.logo span {
+  color: #ff3720;
+}
+.logo span .input {
+  margin-left: 3em;
+}
+.logo span .submit {
+  margin-left: 1em;
+  background-color: red;
+  color: black;
+}
+
+nav {
+  float: right;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  margin-left: 1em;
+}
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 3em;
+}
+nav ul li a:hover {
+  background-color: yellowgreen;
+  color: black;
+}
+
+main {
+  padding: 2em 15em;
+  background-image: url("../images/background.jpg");
+  height: 100vh;
+}
+
+h1, h3 {
+  text-align: center;
+  color: #fff;
+  font-weight: normal;
+}
+
+h1 {
+  margin-top: 20%;
+  border-bottom: 1px solid #ff3720;
+  font-size: 2.5em;
+}
+
+section {
+  text-align: center;
+  padding: 5em 10px;
+}
+section:before, section:after {
+  content: "";
+  display: table;
+}
+section:after {
+  clear: both;
+}
+section h2 {
+  text-transform: uppercase;
+  margin-bottom: 3em;
+}
+
+.catalog {
+  background-color: #f0f0f0;
+}
+.catalog .col {
+  float: left;
+  width: 25%;
+  object-fit: cover;
+}
+.catalog .col img {
+  width: 90%;
+}
+
+.button {
+  background-color: #ff3720;
+  padding: 0.5em 2em;
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.button:hover {
+  background-color: yellowgreen;
+}
+
+table {
+  width: 60%;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+table th, table td {
+  padding: 1em;
+}
+table thead tr {
+  background-color: #ff3720;
+}
+table thead th {
+  color: #fff;
+}
+table thead th:first-child {
+  background-color: #e42b15;
+}
+table tbody tr {
+  border-bottom: 1px solid #797979;
+}
+table tbody tr:first-child {
+  background-color: #f0f0f0;
+}
+
+#pricingButton {
+  display: none;
+}
+
+footer {
+  padding: 20px 10em;
+  background-color: #000;
+}
+footer:before, footer:after {
+  content: "";
+  display: table;
+}
+footer:after {
+  clear: both;
+}
+footer .logo {
+  float: none;
+  font-size: 1.5em;
+}
+footer address {
+  float: left;
+  margin: 1em;
+}
+footer .video {
+  margin-left: 5px;
+  float: left;
+}
+footer .map {
+  float: right;
+  margin: 1em;
+}
+
+@media screen and (max-width: 1200px) {
+  main {
+    padding: 2em;
+  }
+
+  h1 {
+    width: 90%;
+  }
+
+  .catalog .col {
+    width: 50%;
+    margin-bottom: 3em;
+  }
+
+  footer {
+    text-align: center;
+  }
+  footer address, footer map {
+    width: 100%;
+    margin: 1em 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
